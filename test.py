@@ -1,31 +1,27 @@
-from random import choice
-
-
-number_of_guesses = 8
-def wordle(number_of_guesses):
-    list_of_words = ["nurse", "Ramzi", "Guess"]
-    hidden_word = choice(list_of_words)
-    guessed_word = []
-    for i in range(number_of_guesses):
-        guessed_word = input("Please enter a guess: ")
-        result = ""
-        if guessed_word == hidden_word:
-            print("Correct!")
-            break
-        for j in range(len(guessed_word)):
-            if hidden_word[j] == guessed_word[j]:
-                result = result + "!"
-            elif guessed_word[j] in hidden_word:
-                result = result + "0"
-            else:
-                result = result + "X"
-    print(result, end="")
-    # print("You guessed " + guessed_word)
-    # if hidden_word == guessed_word:
-    #     print("You are correct!")
-    # else:
-    #     print("Incorrect!")
-    # print(guessed_word)
-    # print(result)
-
-wordle(1)
+age = 18
+name = "Ramzi"
+print("your age is " + str(age))# Write your code here :-)
+print("your age is %d" % age)
+print("My name is %s. Your age is %d" % (name,age))
+ageAsAstring = '18'
+agePlus2 =float(ageAsAstring) + 2
+distance = 20#miles
+velocity = 65#mph
+TimeinHours = 20/65
+Conversion = TimeinHours * 60/1
+print(Conversion)
+v = 65
+hourstominutes = 1/60
+milestometers = 1609.34/1
+Conversion = velocity * ((hourstominutes) * (hourstominutes)) * (milestometers)
+print(Conversion)
+d = 10 * (1000/1)
+t = (2*10000/1)**.5
+print(t)
+velocity = 10000
+FinalVelocity = (20000 *.1)**.5
+#d = 0.1 meters
+#v = 0
+#a = 10meters per milisec^2
+#find time and final velocity
+print(time)
